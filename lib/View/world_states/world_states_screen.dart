@@ -3,6 +3,7 @@ import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:get/get.dart';
 import 'package:pie_chart/pie_chart.dart';
 
+import '../countries_list/countries_list_screen.dart';
 import 'world_states_logic.dart';
 
 class WorldStatesScreen extends StatefulWidget {
@@ -122,7 +123,9 @@ class _WorldStatesScreenState extends State<WorldStatesScreen>
                       ),
                     ),
                     GestureDetector(
-                      onTap: () {},
+                      onTap: () {
+                        Get.to(CountriesListScreen());
+                      },
                       child: Container(
                         height: 50,
                         decoration: BoxDecoration(
